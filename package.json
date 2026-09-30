@@ -1,0 +1,62 @@
+{
+  "name": "@com2usplatform/create-hiveaxyl-tcbconnector-template",
+  "version": "2.0.0",
+  "description": "Axyl TCB Cloud Function 프로젝트 스캐폴딩 CLI (npm create @com2usplatform/hiveaxyl-tcbconnector-template)",
+  "bin": {
+    "create-hiveaxyl-tcbconnector-template": "bin/index.js"
+  },
+  "files": [
+    "bin",
+    "lib",
+    "NOTICE",
+    "template/src",
+    "template/test",
+    "template/scripts",
+    "template/.minimal",
+    "template/AGENTS.md",
+    "template/AGENTS.minimal.md",
+    "template/README.md",
+    "template/README.minimal.md",
+    "template/SECURITY.md",
+    "template/package.json",
+    "template/package-lock.json",
+    "template/tsconfig.json",
+    "template/vitest.config.ts",
+    "template/cloudbaserc.json",
+    "template/_gitignore",
+    "template/_env.example"
+  ],
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "template:install": "npm install --prefix template",
+    "template:test": "npm run --prefix template test",
+    "template:test:watch": "npm run --prefix template test:watch",
+    "template:build": "npm run --prefix template build",
+    "template:deploy": "npm run --prefix template deploy",
+    "template:deploy:build": "npm run --prefix template deploy:build",
+    "build": "node -e \"console.log('no build step')\""
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/com2usplatform/hiveaxyl-tcbconnector-template.git"
+  },
+  "keywords": [
+    "axyl",
+    "tcb",
+    "cloudbase",
+    "template"
+  ],
+  "author": "Com2uS Platform",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/com2usplatform/hiveaxyl-tcbconnector-template#readme",
+  "devDependencies": {
+    "@types/node": "^25.9.1",
+    "vitest": "^4.1.6"
+  }
+}
