@@ -1,0 +1,17 @@
+# npm 게시 진입점. v* Tag가 생기면 게시용 Reusable Workflow를 호출한다.
+# 게시 로직은 이 저장소에 두지 않는다. 호출 대상은 검토된 전체 Commit SHA로 고정한다.
+name: publish
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: read
+  id-token: write             # npm 신뢰 게시(OIDC)
+
+jobs:
+  publish:
+    uses: com2usplatform/package-publish-workflows/.github/workflows/npm-publish.yml@684e317e1e8e33cf45feeb47482074cf7c46b41f
+    # Environment Secret(첫 게시 토큰)은 호출된 Workflow에 inherit으로만 넘어간다.
+    secrets: inherit
