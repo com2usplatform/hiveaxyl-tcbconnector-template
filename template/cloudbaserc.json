@@ -1,0 +1,338 @@
+{
+  "envId": "",
+  "region": "",
+  "functions": [
+    {
+      "name": "index",
+      "dir": "./dist",
+      "handler": "index.main",
+      "runtime": "Nodejs18.15",
+      "timeout": 30,
+      "memorySize": 256,
+      "installDependency": false,
+      "envVariables": {
+        "DB_HOST": "",
+        "DB_PORT": "",
+        "DB_USER": "",
+        "DB_PASSWORD": "",
+        "DB_NAME": ""
+      }
+    },
+    {
+      "name": "echo",
+      "dir": "./dist",
+      "handler": "echo.main",
+      "runtime": "Nodejs18.15",
+      "timeout": 30,
+      "memorySize": 256,
+      "installDependency": false
+    },
+    {
+      "name": "validationError",
+      "dir": "./dist",
+      "handler": "validationError.main",
+      "runtime": "Nodejs18.15",
+      "timeout": 30,
+      "memorySize": 256,
+      "installDependency": false
+    },
+    {
+      "name": "grantItem",
+      "dir": "./dist",
+      "handler": "grantItem.main",
+      "runtime": "Nodejs18.15",
+      "timeout": 30,
+      "memorySize": 256,
+      "installDependency": false,
+      "envVariables": {
+        "DB_HOST": "",
+        "DB_PORT": "",
+        "DB_USER": "",
+        "DB_PASSWORD": "",
+        "DB_NAME": ""
+      }
+    },
+    {
+      "name": "uploadFile",
+      "dir": "./dist",
+      "handler": "uploadFile.main",
+      "runtime": "Nodejs18.15",
+      "timeout": 60,
+      "memorySize": 512,
+      "installDependency": false,
+      "envVariables": {
+        "TCB_ENV_ID": "",
+        "DB_HOST": "",
+        "DB_PORT": "",
+        "DB_USER": "",
+        "DB_PASSWORD": "",
+        "DB_NAME": ""
+      }
+    },
+    {
+      "name": "getUploadUrl",
+      "dir": "./dist",
+      "handler": "getUploadUrl.main",
+      "runtime": "Nodejs18.15",
+      "timeout": 30,
+      "memorySize": 256,
+      "installDependency": false,
+      "envVariables": {
+        "TCB_ENV_ID": ""
+      }
+    },
+    {
+      "name": "listFiles",
+      "dir": "./dist",
+      "handler": "listFiles.main",
+      "runtime": "Nodejs18.15",
+      "timeout": 30,
+      "memorySize": 256,
+      "installDependency": false,
+      "envVariables": {
+        "DB_HOST": "",
+        "DB_PORT": "",
+        "DB_USER": "",
+        "DB_PASSWORD": "",
+        "DB_NAME": ""
+      }
+    },
+    {
+      "name": "getFileUrl",
+      "dir": "./dist",
+      "handler": "getFileUrl.main",
+      "runtime": "Nodejs18.15",
+      "timeout": 30,
+      "memorySize": 256,
+      "installDependency": false,
+      "envVariables": {
+        "TCB_ENV_ID": "",
+        "DB_HOST": "",
+        "DB_PORT": "",
+        "DB_USER": "",
+        "DB_PASSWORD": "",
+        "DB_NAME": ""
+      }
+    },
+    {
+      "name": "deleteFile",
+      "dir": "./dist",
+      "handler": "deleteFile.main",
+      "runtime": "Nodejs18.15",
+      "timeout": 30,
+      "memorySize": 256,
+      "installDependency": false,
+      "envVariables": {
+        "TCB_ENV_ID": "",
+        "DB_HOST": "",
+        "DB_PORT": "",
+        "DB_USER": "",
+        "DB_PASSWORD": "",
+        "DB_NAME": ""
+      }
+    },
+    {
+      "name": "createNote",
+      "dir": "./dist",
+      "handler": "createNote.main",
+      "runtime": "Nodejs18.15",
+      "timeout": 30,
+      "memorySize": 256,
+      "installDependency": false,
+      "envVariables": {
+        "TCB_ENV_ID": "",
+        "TCB_DOCDB_INSTANCE": "",
+        "TCB_DOCDB_DATABASE": ""
+      }
+    },
+    {
+      "name": "getNote",
+      "dir": "./dist",
+      "handler": "getNote.main",
+      "runtime": "Nodejs18.15",
+      "timeout": 30,
+      "memorySize": 256,
+      "installDependency": false,
+      "envVariables": {
+        "TCB_ENV_ID": "",
+        "TCB_DOCDB_INSTANCE": "",
+        "TCB_DOCDB_DATABASE": ""
+      }
+    },
+    {
+      "name": "listNotes",
+      "dir": "./dist",
+      "handler": "listNotes.main",
+      "runtime": "Nodejs18.15",
+      "timeout": 30,
+      "memorySize": 256,
+      "installDependency": false,
+      "envVariables": {
+        "TCB_ENV_ID": "",
+        "TCB_DOCDB_INSTANCE": "",
+        "TCB_DOCDB_DATABASE": ""
+      }
+    },
+    {
+      "name": "updateNote",
+      "dir": "./dist",
+      "handler": "updateNote.main",
+      "runtime": "Nodejs18.15",
+      "timeout": 30,
+      "memorySize": 256,
+      "installDependency": false,
+      "envVariables": {
+        "TCB_ENV_ID": "",
+        "TCB_DOCDB_INSTANCE": "",
+        "TCB_DOCDB_DATABASE": ""
+      }
+    },
+    {
+      "name": "deleteNote",
+      "dir": "./dist",
+      "handler": "deleteNote.main",
+      "runtime": "Nodejs18.15",
+      "timeout": 30,
+      "memorySize": 256,
+      "installDependency": false,
+      "envVariables": {
+        "TCB_ENV_ID": "",
+        "TCB_DOCDB_INSTANCE": "",
+        "TCB_DOCDB_DATABASE": ""
+      }
+    },
+    {
+      "name": "transferPoints",
+      "dir": "./dist",
+      "handler": "transferPoints.main",
+      "runtime": "Nodejs18.15",
+      "timeout": 30,
+      "memorySize": 256,
+      "installDependency": false,
+      "envVariables": {
+        "TCB_ENV_ID": "",
+        "TCB_DOCDB_INSTANCE": "",
+        "TCB_DOCDB_DATABASE": ""
+      }
+    },
+    {
+      "name": "seedTestData",
+      "dir": "./dist",
+      "handler": "seedTestData.main",
+      "runtime": "Nodejs18.15",
+      "timeout": 30,
+      "memorySize": 256,
+      "installDependency": false,
+      "envVariables": {
+        "TCB_ENV_ID": "",
+        "TCB_DOCDB_INSTANCE": "",
+        "TCB_DOCDB_DATABASE": "",
+        "ALLOW_SETUP_FUNCTIONS": ""
+      }
+    },
+    {
+      "name": "drawGacha",
+      "dir": "./dist",
+      "handler": "drawGacha.main",
+      "runtime": "Nodejs18.15",
+      "timeout": 30,
+      "memorySize": 256,
+      "installDependency": false,
+      "envVariables": {
+        "DB_HOST": "",
+        "DB_PORT": "",
+        "DB_USER": "",
+        "DB_PASSWORD": "",
+        "DB_NAME": ""
+      }
+    },
+    {
+      "name": "createTables",
+      "dir": "./dist",
+      "handler": "createTables.main",
+      "runtime": "Nodejs18.15",
+      "timeout": 30,
+      "memorySize": 256,
+      "installDependency": false,
+      "envVariables": {
+        "DB_HOST": "",
+        "DB_PORT": "",
+        "DB_USER": "",
+        "DB_PASSWORD": "",
+        "DB_NAME": "",
+        "ALLOW_SETUP_FUNCTIONS": ""
+      }
+    },
+    {
+      "name": "seedData",
+      "dir": "./dist",
+      "handler": "seedData.main",
+      "runtime": "Nodejs18.15",
+      "timeout": 30,
+      "memorySize": 256,
+      "installDependency": false,
+      "envVariables": {
+        "DB_HOST": "",
+        "DB_PORT": "",
+        "DB_USER": "",
+        "DB_PASSWORD": "",
+        "DB_NAME": "",
+        "ALLOW_SETUP_FUNCTIONS": ""
+      }
+    },
+    {
+      "name": "createCollections",
+      "dir": "./dist",
+      "handler": "createCollections.main",
+      "runtime": "Nodejs18.15",
+      "timeout": 30,
+      "memorySize": 256,
+      "installDependency": false,
+      "envVariables": {
+        "TCB_ENV_ID": "",
+        "TCB_DOCDB_INSTANCE": "",
+        "TCB_DOCDB_DATABASE": "",
+        "ALLOW_SETUP_FUNCTIONS": ""
+      }
+    },
+    {
+      "name": "issueWebSocketTicket",
+      "dir": "./dist",
+      "handler": "issueWebSocketTicket.main",
+      "runtime": "Nodejs18.15",
+      "timeout": 30,
+      "memorySize": 256,
+      "installDependency": false,
+      "envVariables": {
+        "DB_HOST": "",
+        "DB_PORT": "",
+        "DB_USER": "",
+        "DB_PASSWORD": "",
+        "DB_NAME": ""
+      }
+    },
+    {
+      "name": "websocketDemoGateway",
+      "dir": "./websocket/websocket-demo",
+      "type": "HTTP",
+      "handler": "index.main",
+      "runtime": "Nodejs18.15",
+      "timeout": 7200,
+      "memorySize": 512,
+      "protocolType": "WS",
+      "protocolParams": {
+        "wsParams": {
+          "idleTimeOut": 3600
+        }
+      },
+      "installDependency": true,
+      "envVariables": {
+        "DB_HOST": "",
+        "DB_PORT": "",
+        "DB_USER": "",
+        "DB_PASSWORD": "",
+        "DB_NAME": ""
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+# 이 파일을 복사해 .env 를 만들고 실제 값을 채우세요.
+# cp .env.example .env
+# (주석은 값과 같은 줄에 쓰지 마세요 — 배포 스크립트가 값만 읽습니다)
+
+# 배포/호출 대상 TCB 환경 (필수) — cloudbaserc.json 에 하드코딩하지 않고 여기서 주입됩니다
+# 환경 ID: TCB 콘솔 우측 상단 환경 선택 드롭다운
+TCB_ENV_ID=your-env-id
+# 환경 리전 (예: ap-singapore) — 미지정 시 SDK/CLI 기본 리전(ap-shanghai)으로 붙어 거절됩니다
+TCB_REGION=your-region
+
+# DB 연결 정보
+DB_HOST=your-host
+DB_PORT=your-port
+DB_USER=your-user
+DB_PASSWORD=your-password
+DB_NAME=your-database
+
+# Document DB (MongoDB판) 사용 시 필요 — 콘솔 문서형 DB 상단 드롭다운 값
+# 인스턴스 이름 (예: axyl_tcb_mongo)
+TCB_DOCDB_INSTANCE=your-instance
+# 데이터베이스 이름 (예: axyl)
+TCB_DOCDB_DATABASE=your-database
+
+# [개발 전용] 셋업/시드 함수(createTables·createCollections·seedData·seedTestData) 활성화 스위치
+# true 로 배포된 환경에서만 해당 함수가 동작합니다. ⚠️ 운영 배포 전 반드시 이 줄을 지우거나 false 로 바꾸세요.
+ALLOW_SETUP_FUNCTIONS=true
